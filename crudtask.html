@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Crud Operation</title>
+    <link type="text/css" rel="stylesheet" href="crudtask.css"
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="StudentCode">Student Code</label>
+                        <input type="text" name="StudentCode" id="StudentCode">
+                    </div>
+                    <div>
+                        <label for="Student">Student Name</label>
+                        <input type="text" name="Student" id="Student">
+                    </div>
+                    <div>
+                        <label for="mark">Mark</label>
+                        <input type="number" name="mark" id="mark">
+                    </div>
+                    <div>
+                        <label for="rank">Rank</label>
+                        <input type="number" name="rank" id="rank">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Student Code</th>
+                                <th>Student Name</th>
+                                <th>Mark</th>
+                                <th>Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="./crudtask.js"></script>
+</body>
+</html>
